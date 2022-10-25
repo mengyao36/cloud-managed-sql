@@ -100,12 +100,22 @@ create table if not exists production_patient_conditions (
 ); 
 """
 
+table_prod_treatments_procedures = """
+create table if not exists production_treatments_procedures (
+    id int auto_increment,
+    cpt varchar(255) default null unique,
+    PRIMARY KEY (id)
+); 
+"""
+
 # execute the commands above to create tables
 db_gcp.execute(table_prod_patients)
 db_gcp.execute(table_prod_medications)
 db_gcp.execute(table_prod_conditions)
 db_gcp.execute(table_prod_patients_medications)
 db_gcp.execute(table_prod_patient_conditions)
+db_gcp.execute(table_prod_treatments_procedures)
+
 
 
 # show tables from databases
