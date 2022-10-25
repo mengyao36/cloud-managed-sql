@@ -13,4 +13,4 @@
 
 ## Step 4:  Create a python script called (sql_dummy_data.py) using python and send some dummy data into each of the tables
 
-## Step 5: Create an ERD for your DB design using MySQL Work Bench
+## Step 5: Create an ERD for the DB design using MySQL Work Bench
